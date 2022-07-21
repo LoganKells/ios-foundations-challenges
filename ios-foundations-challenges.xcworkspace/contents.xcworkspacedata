@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:module-2-lesson-4-challenge/module-2-lesson-4-challenge.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:module-1-lesson-12-challenge/module-1-lesson-12-challenge.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/logankells/Documents/Projects/Code with Chris Lessons/ios-foundations-challenges/README.md">
+   </FileRef>
+   <FileRef
+      location = "group:module-2-lesson-2-challenge/module-2-lesson-2-challenge.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:module-2-lesson-3-challenge/module-2-lesson-3-challenge.xcodeproj">
+   </FileRef>
+</Workspace>
