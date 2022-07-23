@@ -92,3 +92,24 @@ Declare a property that contains an array of 5 strings. These can be any 5 words
 Each time the button is tapped, choose a random word from the array and put it in the list.
 
 The number of items in the list should grow as you tap the button. 
+
+### Module 2 Lesson 4
+
+#### Set up
+
+Start a new Xcode SwiftUI app project.
+
+#### Challenge
+
+Build a UI with a List and three Buttons below it.
+
+When the first button is tapped:
+- Add a random integer (from 1 to 10) to the List.
+- If the integer you added to the List wasn't a 7, then keep adding random integers (from 1 to 10) to the List until you add a 7 to the List.
+
+When the second button is tapped:
+- Increase all the integers shown in the List by 1
+
+When the third button is tapped:
+- Clear all the numbers from the List.
+
