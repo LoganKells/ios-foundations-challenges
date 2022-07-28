@@ -7,8 +7,8 @@
 
 import Foundation
 
-class FoodViewModel {
-    var pizzas: [Pizza] = [Pizza]()
+class FoodViewModel: ObservableObject {
+    @Published var pizzas: [Pizza] = [Pizza]()
     var newPizza: Pizza = Pizza(name: "Cheese")
     
     init() {
