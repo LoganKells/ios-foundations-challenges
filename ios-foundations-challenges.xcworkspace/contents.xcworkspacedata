@@ -5,10 +5,13 @@
       location = "group:module-2-lesson-3-challenge/../README.md">
    </FileRef>
    <FileRef
-      location = "group:module-2-lesson-4-challenge/module-2-lesson-4-challenge.xcodeproj">
+      location = "group:module-1-lesson-12-challenge/module-1-lesson-12-challenge.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:module-1-lesson-12-challenge/module-1-lesson-12-challenge.xcodeproj">
+      location = "group:module-2-lesson-7-challenge/module-2-lesson-7-challenge.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:module-2-lesson-4-challenge/module-2-lesson-4-challenge.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:module-2-lesson-2-challenge/module-2-lesson-2-challenge.xcodeproj">
