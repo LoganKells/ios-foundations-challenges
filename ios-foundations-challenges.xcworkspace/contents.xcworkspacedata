@@ -5,6 +5,9 @@
       location = "group:module-2-lesson-3-challenge/../README.md">
    </FileRef>
    <FileRef
+      location = "group:module-2-lesson-10-challenge.playground">
+   </FileRef>
+   <FileRef
       location = "group:module-1-lesson-12-challenge/module-1-lesson-12-challenge.xcodeproj">
    </FileRef>
    <FileRef

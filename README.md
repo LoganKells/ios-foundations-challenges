@@ -133,3 +133,13 @@ Declare a ViewModel and instantiate an array containing 3 instances of your clas
 In the View (ContentView.swift), create an instance of your ViewModel and display the array of class objects in a SwiftUI List. Each row in your list should display the Pizza name and then underneath the name, display the three toppings horizontally side by side.
 
 Keep this project handy because we'll build upon it in the Lesson 8 challenge.
+
+### Module 2 Lesson 10
+
+#### Set up
+
+Utilize the given module-2-lesson-10-challenge.playground file.
+
+#### Challenge
+
+Complete the implementation of the Book checkOut, checkIn, and searchByTitle functions. The provided "tests" should print the expected results.
