@@ -143,3 +143,23 @@ Utilize the given module-2-lesson-10-challenge.playground file.
 #### Challenge
 
 Complete the implementation of the Book checkOut, checkIn, and searchByTitle functions. The provided "tests" should print the expected results.
+
+### Module 2 Lesson 12
+
+**NOTE - this is implemented in the module-2-lesson-7-challenge.xcodeproj project.**
+
+#### Setup
+
+Create a new SwiftUI App Xcode project.
+
+You'll also need the JSON file that you created in the Module 2, Lesson 11 challenge. 
+
+If you didn't complete that challenge, you can find a sample JSON file to use in the resources folder for Lesson 12.
+
+#### Challenge
+
+Add the JSON file to your Xcode project.
+
+Parse the JSON file and display the pizzas in a list on the user interface.
+
+The list should display the pizza names and toppings.

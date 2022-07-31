@@ -13,6 +13,7 @@
 		0629E5EC2891DD60007CBAF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0629E5EB2891DD60007CBAF8 /* Preview Assets.xcassets */; };
 		0629E5F62891E2F7007CBAF8 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0629E5F52891E2F7007CBAF8 /* Food.swift */; };
 		0629E5F82891E388007CBAF8 /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0629E5F72891E388007CBAF8 /* FoodModel.swift */; };
+		06B7D8F62896E80E00DF4358 /* pizzas.json in Resources */ = {isa = PBXBuildFile; fileRef = 06B7D8F52896E80E00DF4358 /* pizzas.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		0629E5EB2891DD60007CBAF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0629E5F52891E2F7007CBAF8 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		0629E5F72891E388007CBAF8 /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
+		06B7D8F52896E80E00DF4358 /* pizzas.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pizzas.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		0629E5E32891DD5F007CBAF8 /* module-2-lesson-7-challenge */ = {
 			isa = PBXGroup;
 			children = (
+				06B7D8F42896E7EA00DF4358 /* resources */,
 				0629E5F42891E2B9007CBAF8 /* Models */,
 				0629E5F32891E2AB007CBAF8 /* Views */,
 				0629E5F22891E295007CBAF8 /* ViewModels */,
@@ -95,6 +98,14 @@
 				0629E5F52891E2F7007CBAF8 /* Food.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		06B7D8F42896E7EA00DF4358 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				06B7D8F52896E80E00DF4358 /* pizzas.json */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06B7D8F62896E80E00DF4358 /* pizzas.json in Resources */,
 				0629E5EC2891DD60007CBAF8 /* Preview Assets.xcassets in Resources */,
 				0629E5E92891DD60007CBAF8 /* Assets.xcassets in Resources */,
 			);

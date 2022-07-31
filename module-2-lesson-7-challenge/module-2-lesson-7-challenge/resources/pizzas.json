@@ -1,0 +1,11 @@
+[
+  { "name":"Meat Lovers",
+    "toppings": ["Pepperoni", "Bacon", "Sausage"]
+  },
+  { "name":"Hawaiian",
+    "toppings": ["Ham", "Bacon", "Pineapple"]
+  },
+  { "name":"Deluxe",
+    "toppings": ["Pepperoni", "Green Peppers", "Mushroom"]
+  }
+]

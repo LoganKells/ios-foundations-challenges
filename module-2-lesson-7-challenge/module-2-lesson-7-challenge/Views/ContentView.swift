@@ -18,14 +18,13 @@ struct ContentView: View {
                         VStack(alignment: .leading) {
                             Text(pizzaType.name)
                                 .font(.title)
-                            HStack(alignment: .bottom) {
-                                Text(pizzaType.topping1)
-                                Spacer()
-                                Text(pizzaType.topping2)
-                                Spacer()
-                                Text(pizzaType.topping3)
-                                Spacer()
+                            // TODO add toppings in view
+                            HStack{
+                                ForEach(0..<pizzaType.toppings.count, id: \.self) { i in
+                                    Text(pizzaType.toppings[i])
+                                }
                             }
+                            
                         }
                     }.navigationTitle("Pizza Menu")
                         .navigationBarTitleDisplayMode(NavigationBarItem.TitleDisplayMode.large)
@@ -33,7 +32,7 @@ struct ContentView: View {
                     Text("Click the \"Add pizzas\" button.")
                 }
                 
-            }
+            }.navigationViewStyle(.stack)
             HStack {
                 Button("Add pizzas") {
                     if viewModel.pizzas == nil {
@@ -45,7 +44,7 @@ struct ContentView: View {
                 Button("Add Pineapple") {
                     if viewModel.pizzas != nil {
                         for pizza in viewModel.pizzas! {
-                            pizza.topping1 = "Pineapple"
+                            pizza.toppings.append("Pineapple")
                         }
                         
                         // Note, while the Pizza array is @Published, the value change for each Pizza instances is not identified in SwiftUI.
