@@ -7,13 +7,12 @@
 
 import Foundation
 
-class FoodViewModel: ObservableObject {
-    @Published var pizzas: [Pizza]?
-    var decoder: JSONDecoder = JSONDecoder()
-    
-    init() {
-        // The pizza menu is loaded from the pizzas.json file
-        if let filePath = Bundle.main.path(forResource: "pizzas", ofType: "json") {
+class dataService {
+    public static func readData(fileName: String, fileType: String) -> [Pizza] {
+        let pizzaData: [Pizza]
+        let decoder: JSONDecoder = JSONDecoder()
+        
+        if let filePath = Bundle.main.path(forResource: fileName, ofType: fileType) {
             let url = URL(fileURLWithPath: filePath)
             
             // Load the file contents
@@ -21,15 +20,13 @@ class FoodViewModel: ObservableObject {
                 let pizzaByteData: Data = try Data(contentsOf: url)
                 
                 do {
-                    let pizzaData: [Pizza] = try decoder.decode([Pizza].self, from: pizzaByteData)
+                    pizzaData = try decoder.decode([Pizza].self, from: pizzaByteData)
                     
+                    // Add a unique identifier for each item.
                     for pizza in pizzaData {
                         pizza.id = UUID()
-                        print(pizza.name, pizza.toppings)
                     }
-                    //print("pizzaData: \(pizzaData)")
-                    
-                    self.pizzas = pizzaData
+                    return pizzaData
                 } catch {
                     print("Error. Could not decode byte data: \n \(error)")
                 }
@@ -40,12 +37,26 @@ class FoodViewModel: ObservableObject {
         } else {
             print("Error, file not found.")
         }
+        // Return an empty [Pizza] array in case the file loading failed.
+        return [Pizza]()
+    }
+}
+
+class FoodViewModel: ObservableObject {
+    @Published var pizzas: [Pizza]
+    
+    // let dataLoader = dataService()
+
+    
+    init() {
+        // The pizza menu is loaded from the pizzas.json file
+        pizzas = dataService.readData(fileName: "pizzas", fileType: "json")
         
     }
     
     func addPizzas() {
-        print("Removing")
-        // pizzas?.append(Pizza(name: "Cheese", toppings: ["Pepperoni", "Onion"]))
+        pizzas.append(Pizza(name: "Cheese", toppings: ["Pepperoni", "Onion"], imageName: "hawaiian"))
+
     }
     
 }
