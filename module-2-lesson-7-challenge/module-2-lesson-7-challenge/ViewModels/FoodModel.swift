@@ -44,7 +44,8 @@ class FoodViewModel: ObservableObject {
     }
     
     func addPizzas() {
-        pizzas?.append(Pizza(name: "Cheese", toppings: ["Pepperoni", "Onion"]))
+        print("Removing")
+        // pizzas?.append(Pizza(name: "Cheese", toppings: ["Pepperoni", "Onion"]))
     }
     
 }

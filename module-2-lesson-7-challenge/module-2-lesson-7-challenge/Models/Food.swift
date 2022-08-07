@@ -11,9 +11,11 @@ class Pizza: Identifiable, Decodable {
     var id: UUID?
     var name: String
     var toppings: [String]
+    var imageName: String
     
-    init(name: String, toppings: [String]) {
+    init(name: String, toppings: [String], imageName: String) {
         self.name = name
         self.toppings = toppings
+        self.imageName = imageName
     }
 }

@@ -15,13 +15,26 @@ struct ContentView: View {
             NavigationView {
                 if viewModel.pizzas != nil {
                     List(viewModel.pizzas!) { pizzaType in
-                        VStack(alignment: .leading) {
-                            Text(pizzaType.name)
-                                .font(.title)
-                            // TODO add toppings in view
-                            HStack{
-                                ForEach(0..<pizzaType.toppings.count, id: \.self) { i in
-                                    Text(pizzaType.toppings[i])
+                        HStack {
+                            // Show an image of each pizza to the left of the pizza name
+                            Image(pizzaType.imageName)
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 55, height: 55, alignment: .center)
+                                .clipped()
+                                .cornerRadius(6)
+                            VStack(alignment: .leading){
+                                // Show horizontal stack of toppings for each pizza below the Pizza Name.
+                                Text(pizzaType.name)
+                                    .font(.title2)
+                                    .fontWeight(.bold)
+                                
+                                HStack{
+                                    ForEach(0..<pizzaType.toppings.count, id: \.self) { i in
+                                        Text(pizzaType.toppings[i])
+                                            .font(.caption)
+                                            .fontWeight(.light)
+                                    }
                                 }
                             }
                             
